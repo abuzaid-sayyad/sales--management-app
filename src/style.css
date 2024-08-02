@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.family-poppins{
+  font-family: 'Poppins', sans-serif;
+}
+.text-vs{
+  font-size: 10px;
+}
+
+/*login flower*/
+svg#freepik_stories-blowing-a-dandelion:not(.animated) .animable {opacity: 0;}svg#freepik_stories-blowing-a-dandelion.animated #freepik--Dandelions--inject-15 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft,1.5s Infinite  linear wind;animation-delay: 0s,1s;}svg#freepik_stories-blowing-a-dandelion.animated #freepik--Seeds--inject-15 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown,1.5s Infinite  linear floating;animation-delay: 0s,1s;}            @keyframes slideLeft {                0% {                    opacity: 0;                    transform: translateX(-30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }                    @keyframes slideDown {                0% {                    opacity: 0;                    transform: translateY(-30px);                }                100% {                    opacity: 1;                    transform: translateY(0);                }            }                    @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }        .animator-hidden { display: none; }
+/*login flower end*/
+
+/*login flower*/
+
+svg#freepik_stories-blowing-a-dandelion:not(.animated) .animable {opacity: 0;}svg#freepik_stories-blowing-a-dandelion.animated #freepik--Dandelions--inject-15 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-blowing-a-dandelion.animated #freepik--Seeds--inject-15 {animation: 1.5s Infinite  linear floating;animation-delay: 0s;}            @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }                    @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }        .animator-hidden { display: none; }
+/*login flower end*/
+
+.from_dark_teal{
+  --tw-gradient-from:  #1BC5BD;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(29, 78, 216, 0));
+}
+.to_light_teal{
+  --tw-gradient-to: #9CECE8;
+}
+.bg_gradient_to_br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+.bg-teal{
+  background: #1BC5BD;
+}
+.text-teal{
+  color: #1BC5BD;
+}
+.border-teal{
+  --tw-border-opacity: 1;
+  border-color: rgba(27, 197, 189, var(--tw-border-opacity));
+}
+.text-vvs{
+  font-size: 9px;
+}
+.text-xvs{
+  font-size: 7px;
+}
+.hover-bg-teal:hover {
+  background-color: #1BC5BD;
+}
+
+/*my task file*/
+.h-screen-23px{
+  height: calc(100vh - 145px);
+}
+.h-screen-65px{
+  height: calc(100vh - 4rem);
+}
+.cursor-grab{
+  cursor: grab;
+}
+
+/*my task file end*/
