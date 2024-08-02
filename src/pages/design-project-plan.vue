@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="col-span-3 my-auto">
-          <img class="p-5" src="../public/images/design-project-plan.png">
+          <img class="p-5" src="/src/assets/images/design-project-plan.png">
         </div>
       </div>
     </div>

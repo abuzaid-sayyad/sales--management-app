@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="col-span-3 my-auto">
-          <img class="" src="../public/images/nits-basic-training.png">
+          <img class="" src="/src/assets/images/nits-basic-training.png">
         </div>
       </div>
     </div>

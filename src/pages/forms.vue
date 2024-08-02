@@ -4,7 +4,7 @@
       <div class="m-auto">
         <div class="family-poppins text-2xl font-medium text-center mx-auto">Collect the info your team needs with Forms</div>
         <div class="mt-10 flex">
-          <img class="h-60 mx-auto" src="../public/images/two-people-pointing.png">
+          <img class="h-60 mx-auto" src="/src/assets/images/two-people-pointing.png">
         </div>
         <div class="mt-10 text-center family-poppins text-xs font-medium">Standardize how your team recevies work requests and automatically <br>turn them into tasks so nothing falls thoughthe cracks. <span class="cursor-pointer text-indigo-700">Learn more</span></div>
         <div class="flex">

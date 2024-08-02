@@ -9,7 +9,7 @@
           <input class="my-auto w-full focus:outline-none family-poppins px-4 py-2 ml-4 rounded-lg border text-sm font-medium" placeholder="Send message to member....">
         </div>
         <div class="bg-white rounded-md w-full flex-col py-10 mt-6">
-          <img class="mx-auto" src="../public/images/two.people.conversation.png">
+          <img class="mx-auto" src="/src/assets/images/two.people.conversation.png">
           <div class="family-poppins font-medium text-lg mt-6 text-center w-full">Connect your words to your work</div>
           <div class="family-poppins font-medium text-xs text-center w-full mt-6">Send a message to kick off projects.Or discuss tasks.<br>Or brainstrom ideas. You can also send message from your email to<br> <span class="cursor-pointer text-indigo-500">My-project@mail.nitseditor.com</span></div>
         </div>

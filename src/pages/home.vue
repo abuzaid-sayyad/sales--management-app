@@ -4,7 +4,7 @@
       <div class="max-w-3xl m-auto">
         <div class="flex justify-between">
           <div class="my-auto">
-            <img class="h-56" src="../public/images/two_people_waving.svg"/>
+            <img class="h-56" src="/src/assets/images/two_people_waving.svg"/>
           </div>
           <div class="my-auto ml-10">
             <div class="family-poppins text-base font-medium text-gray-700">Good evening, Juned!</div>
