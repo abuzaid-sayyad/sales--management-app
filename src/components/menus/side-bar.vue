@@ -2,7 +2,7 @@
 <!--  side-bar start-->
  <div class="bg-white h-screen fixed z-30 top-0" style="width: 17.3%">
    <div class="flex h-28 border-b">
-     <img class="h-11 px-3 m-auto" src="/public/images/nit-logo.png">
+     <img class="h-11 px-3 m-auto" src="/src/assets/images/logo/nit-logo.png">
    </div>
    <div class="flex w-full h-full ">
      <div style="width: 24%">
@@ -80,7 +80,6 @@
                <div class="bg-white h-3 w-3 rotate-45 transform border-l-2 border-teal absolute top-0 left-0 border-b-2" style="margin-top: 13px; margin-left: -7px"></div>
              </div>
            </div>
-<!--           <svg class=" h-7 w-7 m-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.363 8.584l-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 00-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 001.103.777L12 20.245l6.59 3.643a.75.75 0 001.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 00-.423-1.266z" fill-rule="evenodd"/></svg>-->
          </a>
        </div>
      </div>
@@ -124,19 +123,19 @@
            <div class="family-poppins text-white text-xs font-normal px-1">we are working with different team.</div>
            <div class="family-poppins text-white text-xs font-normal px-1 mt-1">Lorem ipsum doler site.</div>
          </div>
-         <div v-for="(item, index) in BigData" class="flex-col w-full">
+         <div v-for="(item, index) in BigData" :key="index" class="flex-col w-full">
            <div :class="'px-4 py-2 w-full flex mt-6 '+item.styling">
              <div class="bg-white h-3 w-3 rounded mr-2 my-auto"></div>
              <div class="text-white family-poppins text-xs my-auto">{{item.title}}</div>
            </div>
            <div class="flex px-2 my-2">
              <div class="flex">
-               <img v-for="(ele, index) in item.picture" :class="'h-6 w-6 rounded-full border-2 border-white '+ele.styling" :src="ele.image">
+               <img v-for="(ele, index) in item.picture" :key="index" class="'h-6 w-6 rounded-full border-2 border-white '+ele.styling" :src="ele.image">
              </div>
              <div class="ml-1 family-poppins text-xs cursor-pointer font-semibold my-auto">+ Invite people</div>
            </div>
            <div class="">
-             <div v-for="(elem, index) in item.projects" class="flex justify-between px-2 py-2 hover:bg-gray-100 cursor-pointer">
+             <div v-for="(elem, index) in item.projects" :key="index" class="flex justify-between px-2 py-2 hover:bg-gray-100 cursor-pointer">
                <div class="flex my-auto">
                  <div :class="'rounded-full h-2 w-2 my-auto mr-2 '+elem.styling"></div>
                  <a href="/project-view" class="text-vs font-medium family-poppins">{{elem.name}}</a>

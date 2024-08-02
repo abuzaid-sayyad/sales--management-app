@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="family-poppins text-sm font-medium mt-10 mb-3">Related templates</div>
-          <div v-for="(item,index) in ListData" class="flex justify-between">
+          <div v-for="(item,index) in ListData" :key="index" class="flex justify-between">
             <div class="flex py-1.5">
               <div :class="'w-10 h-10 rounded-xl ' + item.bg_color "></div>
               <div class="my-auto ml-3">
@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="col-span-3 my-auto">
-          <img class="p-5" src="../public/images/web-design.png">
+          <img class="p-5" src="/src/assets/images/web-design.png">
         </div>
       </div>
     </div>
