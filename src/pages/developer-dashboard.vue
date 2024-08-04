@@ -13,12 +13,12 @@
         </div>
       </div>
       <div class="grid grid-cols-5 gap-2 mt-3">
-        <div v-for="(item, index) in gridData" class="h-32 w-full bg-white rounded">
+        <div v-for="(item, index) in gridData" :key="index" class="h-32 w-full bg-white rounded">
           <div class="text-vs font-semibold text-gray-600 family-poppins border-b pt-2 pb-1 px-2">{{item.title}}</div>
           <div class="px-4 py-2">
             <div class="text-3xl font-medium text-gray-800 family-poppins">{{item.mints}}</div>
             <div class="mt-2">
-              <div v-for="(ele, index) in item.Data" class="grid grid-cols-2">
+              <div v-for="(ele, index) in item.Data" :key="index" class="grid grid-cols-2">
                 <div class="text-xs font-medium family-poppins text-gray-700">{{ele.subtitle}}</div>
                 <div class="text-xs font-medium family-poppins text-gray-700">{{ele.result}}</div>
               </div>
@@ -27,10 +27,10 @@
         </div>
       </div>
       <div class="grid grid-cols-4 gap-2 mt-2">
-        <div v-for="(item, index) in gridData2" class="h-32 w-full flex flex-col bg-white rounded">
+        <div v-for="(item, index) in gridData2" :key="index" class="h-32 w-full flex flex-col bg-white rounded">
           <div class="text-vs font-semibold text-gray-600 family-poppins border-b pt-2 pb-1 px-2">{{item.title}}</div>
           <div class="my-auto">
-            <div v-for="(ele, index) in item.Data" class="flex justify-center">
+            <div v-for="(ele, index) in item.Data" :key="index" class="flex justify-center">
               <div class="text-3xl font-medium family-poppins">{{ele.subtitle}}</div>
               <div class="text-sm font-medium family-poppins text-gray-700 mt-auto pb-1 ml-2">{{ele.result}}</div>
             </div>

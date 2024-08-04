@@ -25,13 +25,13 @@
       <div class="grid grid-cols-3 gap-2 mt-2">
         <div class="col-span-2">
           <div class="grid grid-cols-2 gap-2">
-            <box-widget v-for="(item,index) in TaskData" :key="item" :title="item.heading" styling="h-auto">
+            <box-widget v-for="(item,index) in TaskData" :key="index" :title="item.heading" styling="h-auto">
               <div class="h-36 overflow-y-auto -my-2 -mx-4">
                 <div class="mx-4 py-2 border-b-2 flex justify-between">
                   <div class="family-poppins text-xs font-medium text-gray-600">{{item.title_1}}</div>
                   <div class="family-poppins text-xs font-medium text-gray-600">{{item.title_2}}</div>
                 </div>
-                <div v-for="(items,index) in item.DescData" class="py-3 mx-4 border-b flex justify-between">
+                <div v-for="(items,index) in item.DescData" :key="index" class="py-3 mx-4 border-b flex justify-between">
                   <div class="flex">
                     <svg :class="'w-3 h-3 my-auto ' +items.styling" fill="currentColor" viewBox="0 -65 424.032 424" xmlns="http://www.w3.org/2000/svg"><path d="M146.66 293.367c-4.094 0-8.191-1.558-11.305-4.695L4.688 158.004c-6.25-6.25-6.25-16.383 0-22.633s16.382-6.25 22.636 0l119.36 119.36L396.71 4.702c6.25-6.25 16.383-6.25 22.633 0s6.25 16.387 0 22.637L158.012 288.672a16.05 16.05 0 01-11.352 4.695zm0 0" fill-rule="evenodd"/></svg>
                     <div class="family-poppins text-xs font-semibold text-gray-700 ml-2 my-auto">{{items.data}}</div>
@@ -51,7 +51,7 @@
                     <th class="family-poppins px-2 text-xs font-semibold py-4 text-left">Client | Project</th>
                     <th class="family-poppins text-xs font-semibold py-4 text-left">Sum USD</th>
                   </tr>
-                  <tr v-for="(item,index) in TableData" class="border-b">
+                  <tr v-for="(item,index) in TableData" :key="index" class="border-b">
                     <td class="family-poppins text-xs font-medium py-3 pl-3">{{item.date}}</td>
                     <td class=" py-3 px-2">
                       <div class="family-poppins text-xs font-medium">{{item.client}}</div>
@@ -65,7 +65,7 @@
           </div>
           <box-widget title="Team hours logged this week" styling="h-auto" class="mt-2">
             <div class="overflow-y-auto -mx-4 -my-2" style="height: 140px">
-              <div v-for="(item,index) in NameData" class="flex w-full">
+              <div v-for="(item,index) in NameData" :key="index" class="flex w-full">
                 <div class="w-full pl-3 w-1/2">
                   <div class="py-3 border-b flex ">
                     <div class="family-poppins text-xs font-semibold">{{item.name}}</div>
@@ -93,7 +93,7 @@
                   </tr>
                   </thead>
                   <tbody>
-                  <tr v-for="(item,index) in WeekData" class="py-3 border-b">
+                  <tr v-for="(item,index) in WeekData" :key="index" class="py-3 border-b">
                     <td class="family-poppins text-xs font-medium text-gray-600 py-2">{{item.id}}</td>
                     <td class="flex py-2">
                       <div class="pt-1">

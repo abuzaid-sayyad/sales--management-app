@@ -383,13 +383,13 @@
                       <input type="checkbox" class="h-3 w-3 my-auto ml-2" checked>
                     </div>
                     <div class="h-80 overflow-y-auto">
-                      <div v-for="(item, index) in tableData">
+                      <div v-for="(item, index) in tableData" :key="index">
                         <div class="flex py-1.5 px-1.5 hover:bg-gray-50">
                           <input type="checkbox" class="h-3.5 w-3.5 mr-2">
                           <div class="text-xs font-medium family-poppins text-gray-700">{{item.heading}}</div>
                         </div>
                         <div class="ml-5">
-                          <div v-for="(ele, index) in item.subData" class="flex py-1.5 px-1.5 hover:bg-gray-50">
+                          <div v-for="(ele, index) in item.subData" :key="index" class="flex py-1.5 px-1.5 hover:bg-gray-50">
                             <input type="checkbox" class="h-3.5 w-3.5 mr-2">
                             <div class="text-xs font-medium family-poppins text-gray-700">{{ele.name}}</div>
                           </div>
@@ -453,12 +453,12 @@
                       <input type="checkbox" class="h-3 w-3 my-auto ml-2" checked>
                     </div>
                     <div class="h-80 overflow-y-auto">
-                      <div v-for="(item, index) in tableData">
+                      <div v-for="(item, index) in tableData" :key="index">
                         <div class="flex py-2 px-1.5 hover:bg-gray-50">
                           <div class="text-sm font-medium family-poppins text-gray-700">{{item.heading}}</div>
                         </div>
                         <div class="">
-                          <div v-for="(ele, index) in item.subData" class="flex py-1.5 px-1.5 hover:bg-gray-50">
+                          <div v-for="(ele, index) in item.subData" :key="index" class="flex py-1.5 px-1.5 hover:bg-gray-50">
                             <input type="checkbox" class="h-3.5 w-3.5 mr-2">
                             <div class="text-xs font-medium family-poppins text-gray-700">{{ele.name}}</div>
                           </div>
@@ -564,7 +564,7 @@
               </div>
             </div>
             <div class="">
-              <div v-for="(item, index) in Sunday" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in Sunday" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
             </div>
           </div>
           <div class="">
@@ -583,7 +583,7 @@
               </div>
             </div>
             <div class="">
-              <div v-for="(item, index) in mondays" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in mondays" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
               <div class="py-3 px-2 rounded-md bg-red-100">
                 <div class="flex justify-between items-center">
                   <div class="flex">
@@ -645,7 +645,7 @@
                   </div>
                 </div>
               </div>
-              <div v-for="(item, index) in mondays2" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in mondays2" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
             </div>
           </div>
           <div class="">
@@ -663,7 +663,7 @@
               </div>
             </div>
             <div>
-              <div v-for="(item, index) in Tuesday" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in Tuesday" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
               <div class="py-3 px-2 rounded-md bg-green-100">
                 <div class="flex items-center">
                   <div class="flex">
@@ -716,7 +716,7 @@
                 8h 00min
               </div>
             </div>
-            <div v-for="(item, index) in Wednesday" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+            <div v-for="(item, index) in Wednesday" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
             <div class="py-3 px-2 rounded-md bg-yellow-100">
               <div class="flex items-center">
                 <div class="flex">
@@ -751,7 +751,7 @@
                 </div>
               </div>
             </div>
-            <div v-for="(item, index) in Wednesday2" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+            <div v-for="(item, index) in Wednesday2" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
             <div class="py-3 px-2 rounded-md bg-blue-100">
               <div class="flex items-center">
                 <div class="flex">
@@ -801,7 +801,7 @@
                 6h 30min
               </div>
             </div>
-            <div v-for="(item, index) in Thursday" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+            <div v-for="(item, index) in Thursday" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
             <div class="py-3 px-2 rounded-md bg-pink-100">
               <div class="flex items-center">
                 <div class="flex">
@@ -854,7 +854,7 @@
               </div>
             </div>
             <div class="">
-              <div v-for="(item, index) in Friday" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in Friday" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
               <div class="py-3 px-2 rounded-md bg-red-100">
                 <div class="flex items-center">
                   <div class="flex">
@@ -895,7 +895,7 @@
                   </div>
                 </div>
               </div>
-              <div v-for="(item, index) in Friday2" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in Friday2" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
               <div class="py-3 px-2 rounded-md bg-gray-100">
                 <div class="flex items-center">
                   <div class="flex">
@@ -949,7 +949,7 @@
               </div>
             </div>
             <div class="">
-              <div v-for="(item, index) in mondays" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in mondays" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
               <div class="py-3 px-2 rounded-md bg-yellow-100">
                 <div class="flex justify-between items-center">
                   <div class="flex">
@@ -1011,7 +1011,7 @@
                   </div>
                 </div>
               </div>
-              <div v-for="(item, index) in mondays2" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
+              <div v-for="(item, index) in mondays2" :key="index" class="text-xs font-medium family-poppins text-gray-400 px-2 py-3 border-b">{{item.time}}</div>
             </div>
           </div>
         </div>

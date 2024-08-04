@@ -27,10 +27,10 @@
 
       </div>
       <div class="grid grid-cols-6 gap-2 mt-2">
-        <div v-for="(item, index) in gridData2" class="h-32 w-full flex flex-col bg-white rounded">
+        <div v-for="(item, index) in gridData2" :key="index" class="h-32 w-full flex flex-col bg-white rounded">
           <div class="text-vs font-semibold text-gray-600 family-poppins border-b pt-2 pb-1 px-2">{{item.title}}</div>
           <div class="my-auto">
-            <div v-for="(ele, index) in item.Data" class="flex-col">
+            <div v-for="(ele, index) in item.Data" :key="index" class="flex-col">
               <div class="text-3xl font-semibold family-poppins text-center">{{ele.subtitle}}</div>
               <div class="text-xs font-medium family-poppins text-teal mt-auto pb-1 mt-2 text-center">{{ele.result}}</div>
             </div>
@@ -42,7 +42,7 @@
           <div class="text-vs font-semibold text-gray-600 family-poppins border-b pt-2 pb-1 px-2">Leave</div>
           <div class="p-4">
             <div class="grid grid-cols-5 gap-4 pt-4">
-              <div v-for="(item, index) in Leave" :class="'p-2 rounded-md '+item.styling">
+              <div v-for="(item, index) in Leave" :key="index" :class="'p-2 rounded-md '+item.styling">
                 <div class="text-white text-2xl font-bold family-poppins text-center">{{item.number}}</div>
                 <div class="border-b-2 border-white w-7 mx-auto my-1"></div>
                 <div class="text-white text-xs font-medium family-poppins text-center">{{item.name}}</div>
@@ -97,7 +97,7 @@
                       </tr>
                       </thead>
                       <tbody>
-                      <tr v-for="(item,index) in LeaveData" class="py-3 border-b">
+                      <tr v-for="(item,index) in LeaveData" :key="index" class="py-3 border-b">
                         <td class="family-poppins text-xs font-medium text-gray-600 py-2">{{item.id}}</td>
                         <td class="flex py-2 pl-5">
                           <div class="pt-1">

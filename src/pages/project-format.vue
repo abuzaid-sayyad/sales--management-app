@@ -238,7 +238,7 @@
             </div>
           </div>
           <div class="grid grid-cols-5">
-            <div v-for="(item,index) in FieldData" class="flex border py-14 p-2">
+            <div v-for="(item,index) in FieldData" :key="index" class="flex border py-14 p-2">
               <div class="w-3 h-3 rounded-full bg-gray-200 -mt-10"></div>
             </div>
             <div class="rounded-lg w-40 h-8 bg-blue-400 absolute top-80 left-2 flex px-4">

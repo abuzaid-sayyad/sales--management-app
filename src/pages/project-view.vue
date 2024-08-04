@@ -154,7 +154,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div class="flex my-auto">
-                <img v-for="(ele, index) in picture" :class="'h-7 w-7 rounded-full border-2 border-white '+ele.styling" :src="ele.image">
+                <img v-for="(ele, index) in picture" :key="index" :class="'h-7 w-7 rounded-full border-2 border-white '+ele.styling" :src="ele.image">
                 <div class="h-7 w-7 rounded-full border-2 border-white flex bg-green-200 -ml-3">
                   <div class="text-xs font-medium family-poppins m-auto text-green-600">5+</div>
                 </div>
@@ -206,7 +206,7 @@
                 </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
-                <tr v-for="(item,index) in DescData">
+                <tr v-for="(item,index) in DescData" :key="index">
                   <td class="px-3 py-3">
                     <div class="flex">
                       <svg :class="'w-3 h-3 my-auto ' +item.styling" fill="currentColor" viewBox="0 -65 424.032 424" xmlns="http://www.w3.org/2000/svg"><path d="M146.66 293.367c-4.094 0-8.191-1.558-11.305-4.695L4.688 158.004c-6.25-6.25-6.25-16.383 0-22.633s16.382-6.25 22.636 0l119.36 119.36L396.71 4.702c6.25-6.25 16.383-6.25 22.633 0s6.25 16.387 0 22.637L158.012 288.672a16.05 16.05 0 01-11.352 4.695zm0 0" fill-rule="evenodd"/></svg>
@@ -232,7 +232,7 @@
         <div class="col-span-2">
           <box-widget title="My calender" styling="h-auto">
             <div class="h-64 overflow-y-auto -mx-4 -my-2">
-              <div v-for="(item,index) in CalenderData" class="">
+              <div v-for="(item,index) in CalenderData" :key="index" class="">
                 <div class="mx-4 py-3 border-b-2 flex justify-between">
                   <div class="family-poppins mt-2 text-xs font-bold">{{item.day_date}}</div>
                 </div>
@@ -258,7 +258,7 @@
         <div class="col-span-4">
           <box-widget title="Team hours logged this week" styling="h-auto">
             <div class="overflow-y-auto -mx-4 -my-2 h-64">
-              <div v-for="(item,index) in NameData" class="flex w-full">
+              <div v-for="(item,index) in NameData" :key="index" class="flex w-full">
                 <div class="w-full pl-3 w-1/2">
                   <div class="py-3 border-b flex ">
                     <div class="family-poppins text-xs font-semibold">{{item.name}}</div>
@@ -286,7 +286,7 @@
                   </tr>
                   </thead>
                   <tbody>
-                  <tr v-for="(item,index) in WeekData" class="py-3 border-b">
+                  <tr v-for="(item,index) in WeekData" :key="index" class="py-3 border-b">
                     <td class="family-poppins text-xs font-medium text-gray-600 py-2">{{item.id}}</td>
                     <td class="flex py-2">
                       <div class="pt-1">
@@ -312,7 +312,7 @@
           <box-widget title="Contact" styling="h-auto">
             <div class="h-screen-24px overflow-y-auto -mx-4 -my-2">
               <div class="mx-4">
-                <div v-for="(item, index) in contactData" class="flex border-b pb-3 mt-3">
+                <div v-for="(item, index) in contactData" :key="index" class="flex border-b pb-3 mt-3">
                   <img class="h-10 w-10 rounded-full mr-3" :src="item.image">
                   <div class="flex-col my-auto">
                     <div class="text-sm font-medium family-poppins ">{{item.name}}</div>

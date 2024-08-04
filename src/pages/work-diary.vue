@@ -27,7 +27,7 @@
         <div class="border-t pt-4">
           <div class="text-base font-semibold family-poppins">Time sheet this week</div>
           <div class="flex justify-around my-6">
-            <div v-for="(item, index) in Data" class="flex-col">
+            <div v-for="(item, index) in Data" :key="index" class="flex-col">
               <div class="text-xs font-semibold family-poppins">{{ item.day }}</div>
               <div class="text-xs font-semibold mt-1 family-poppins">{{item.date}}</div>
             </div>

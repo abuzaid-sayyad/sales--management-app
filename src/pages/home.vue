@@ -7,7 +7,7 @@
             <img class="h-56" src="/src/assets/images/two_people_waving.svg"/>
           </div>
           <div class="my-auto ml-10">
-            <div class="family-poppins text-base font-medium text-gray-700">Good evening, Juned!</div>
+            <div class="family-poppins text-base font-medium text-gray-700">Good evening, Abuzaid!</div>
             <div class="family-poppins text-sm font-normal text-gray-600 mt-5">Welcome to Asana! This is your home page, where you can quickly see your upcoming tasks and access your most important projects.</div>
           </div>
         </div>

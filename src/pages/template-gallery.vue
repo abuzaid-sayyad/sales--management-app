@@ -69,7 +69,7 @@
           <svg class="w-4 h-4 ml-2 my-auto cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#000" d="M4.516 7.548c.436-.446 1.043-.481 1.576 0L10 11.295l3.908-3.747c.533-.481 1.141-.446 1.574 0 .436.445.408 1.197 0 1.615-.406.418-4.695 4.502-4.695 4.502a1.095 1.095 0 01-1.576 0S4.924 9.581 4.516 9.163c-.409-.418-.436-1.17 0-1.615z"/></svg>
         </div>
       </div>
-      <div v-for="(item,index) in ListData" class="flex justify-between border-b" v-if="openTab ===1" v-bind:class="{'hidden':openTab !==1, 'block':openTab ===1}">
+      <div v-for="(item,index) in ListData" :key="index" class="flex justify-between border-b" v-bind:class="{'hidden':openTab !==1, 'block':openTab ===1}">
         <div class="flex py-2">
           <div :class="'w-10 h-10 rounded-xl ' + item.bg_color "></div>
           <div class="my-auto ml-3">
